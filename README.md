@@ -31,7 +31,7 @@ _optional_
 Start the PyMOL software. Take a quick look at [this tutorial](https://pymolwiki.org/index.php/Practical_Pymol_for_Beginners) (ignore scripting!) - skim it through to understand what's possible.
 
 Enter the following commands (one per line) and explore what they do.
- ```pymol
+ ```
 fetch 1f7u
 select heteroatoms, hetatm
 select protein, chain A
@@ -58,21 +58,21 @@ We are not doing a PyMOL practical today so the above is just to quickly familia
 ---
 **3. Interesting databases.**
 
+a) Go to [ConSurf](http://consurf.tau.ac.il/) to map evolutionary conservation onto protein structure. Choose amino acids, known protein structure YES, enter our PDB ID, NO MSA, keep everything else default or automatic. Submit the job. It will take some time to run. Move on with questions and come back to analyse the output when it is done. It is best to view the results in browser with NGL viewer, and set the style to "spacefill". Are the results unexpected?
+
 Go back to the UniProt entry for our protein.
 
-a) Click through to the InterPro database entry (`CTRL-F` for "View protein in InterPro").
+b) Click through to the InterPro database entry (`CTRL-F` for "View protein in InterPro").
 - What domains and motifs does our protein contain, and are they well supported?
 - Does it match what you see in the structure?
 - What InterPro family is it part of? Here you can read a bit about this protein, if you're interested. How many members does it have and is our protein similar to the most common domain architecture in this family or is it part of a smaller subgroup?
 
-b) From the "Structures" tab in InterPro, follow the links to SCOP and CATH database entries. Do these databases agree on the classification of the constituent domains?
+c) From the "Structures" tab in InterPro, follow the links to SCOP and CATH database entries. Do these databases agree on the classification of the constituent domains?
 
 Go back to the UniProt entry for our protein.
 
-c) Click through to the Pfam database entry (`CTRL-F` for "View protein in Pfam"). Find the Pfam family corresponding to the core domain. Familiarise yourself with the available information. You can even find the HMM profile for this Pfam family here.
+d) Click through to the Pfam database entry (`CTRL-F` for "View protein in Pfam"). Find the Pfam family corresponding to the core domain. Familiarise yourself with the available information. You can even find the HMM profile for this Pfam family here.
 - Let's download the family sequence alignment. We'll need it later for predicting contacts using coevolution. Go to the "Alignments" tab and in "format an alignment" choose UniProt, FASTA, tree, all upper case, gaps as dashes, download.
-
-d) Go to [ConSurf](http://consurf.tau.ac.il/) to map evolutionary conservation onto protein structure. Choose amino acids, known protein structure YES, enter our PDB ID, NO MSA, keep everything else default or automatic. Submit the job. It will take some time to run.
 
 ---
 **4. What if we don't have a structure?**
@@ -84,7 +84,7 @@ b) Let's build ourselves a structural model of the _C. albicans_ protein by homo
 c) Check the _C. albicans_ protein for disorder. Go to [IUPred](http://iupred.enzim.hu/) and submit the A0A1D8PCI5 sequence. Which region in the alignment does the most disordered part correspond to? Does this make sense when you look at the homology model?
 
 d) Let's see how similar our homology model is to the original structural model. Go to PyMOL again and do the following:
- ```pymol
+ ```
 reinitialize
 fetch 1f7u
 hide everything
@@ -103,6 +103,7 @@ cealign mymodel, protein
 
 What's our RMSD? Is it surprising that the alignment is so good?
 
-alignment
-consurf
-coevolution
+e) Let's compare this alignment to an alignment between two proteins, both with experimentally derived structural models. Find the human arginine-tRNA synthetase and repeat the alignment. You could also run a sequence alignment to compare to.
+
+---
+**5. Coevolutionary analysis**
