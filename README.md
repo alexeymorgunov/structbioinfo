@@ -15,6 +15,8 @@ a) Go to [UniProt](http://www.uniprot.org/) and find the entry corresponding to 
 
 b) Download the `.fasta` file containing the sequence of our protein. We'll need it later. Also add it to the basket on the website.
 
+At this stage, quickly jump to section 5 below and submit the sequence for coevolutionary analysis.
+
 c) Note down the residue numbers interacting with ligands. We'll visualise them later.
 
 d) Find the table listing available 3D structure models. Choose the link destination to be RCSB PDB. Click through to all available structure models and check their quality indicators. Which one do you think we should choose to look at? Download the `.pdb` file.
@@ -53,12 +55,12 @@ hide everything, mydist
 distance mydist2, i. 59-60, i. 484-498, mode=4
 ```
 
-We are not doing a PyMOL practical today so the above is just to quickly familiarise you with the syntax. You can always refer to [command reference](http://pymol.org/pymol-command-ref.html) for more useful commands.
+We are not doing a PyMOL practical today so the above is just to quickly familiarise you with the syntax. You can always refer to [documentation](https://pymol.org/dokuwiki/doku.php?id=) for more useful commands.
 
 ---
 **3. Interesting databases.**
 
-a) Go to [ConSurf](http://consurf.tau.ac.il/) to map evolutionary conservation onto protein structure. Choose amino acids, known protein structure YES, enter our PDB ID, NO MSA, keep everything else default or automatic. Submit the job. It will take some time to run. Move on with questions and come back to analyse the output when it is done. It is best to view the results in browser with NGL viewer, and set the style to "spacefill". Are the results unexpected?
+a) Go to [ConSurf](http://consurf.tau.ac.il/) to map evolutionary conservation onto protein structure. Choose amino acids, known protein structure YES, enter our PDB ID, NO MSA, keep everything else default or automatic. Submit the job. It will take some time to run. Move on with questions and come back to analyse the output when it is done (10-15 min). It is best to view the results in browser with NGL viewer, and set the style to "spacefill". Are the results unexpected?
 
 Go back to the UniProt entry for our protein.
 
@@ -97,13 +99,24 @@ select mymodel, model_
 deselect
 show cartoon, mymodel
 color yellow, mymodel
-#fun begins
 cealign mymodel, protein
 ```
 
-What's our RMSD? Is it surprising that the alignment is so good?
+What's our RMSD? Is that a good alignment? Is it surprising to find that?
 
 e) Let's compare this alignment to an alignment between two proteins, both with experimentally derived structural models. Find the human arginine-tRNA synthetase and repeat the alignment. You could also run a sequence alignment to compare to.
 
 ---
 **5. Coevolutionary analysis**
+
+_AT THE START_
+
+To run a good coevolutionary analysis, it is best to have the software running on your own machine but some servers exist for quick and dirty analysis. We'll do one such analysis - don't expect the very best results!
+
+Go to [GREMLIN](http://gremlin.bakerlab.org/submit.php) and enter the sequence for the _S. cerevisiae_ protein. Keep all the parameters as default. Enter your email to get notified when it completes. Let it run, it will take a while. Come back to this at the very end.
+
+_AT THE END_
+
+If the job doesn't finish running, download the precomputed [results](files/).
+
+a) 
