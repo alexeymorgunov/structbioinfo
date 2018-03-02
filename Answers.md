@@ -44,7 +44,7 @@ d) [tRNA-synt_1d](http://pfam.xfam.org/family/tRNA-synt_1d).
 ---
 **4. What if we don't have a structure?**
 
-a) [Alignment](http://www.uniprot.org/align/A2018030283C3DD8CE55183C76102DC5D3A26728B0A99479). (Link will expire on 9 Mar 2018.) Very similar sequences, 64.4% of identity means this is definitely the same protein. Notice a small insertion in the _C. albicans_ version. Downloaded [alignment](files/alignment.fasta).
+a) [Alignment](http://www.uniprot.org/align/A2018030283C3DD8CE55183C76102DC5D3A26728B0A99479). (Link will expire on 9 Mar 2018.) Very similar sequences, 64.4% identity means this is definitely the same protein. Notice a small insertion in the _C. albicans_ version. Downloaded [alignment](files/alignment.fasta).
 
 b) [Results](https://swissmodel.expasy.org/interactive/fQ9e8F/). (Link may expire.) Full [results archive](files/homology_modelling_results.zip) and [PDB model](model.pdb) only.
 
