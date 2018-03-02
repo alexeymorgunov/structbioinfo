@@ -6,6 +6,8 @@ Instructions for the practical are below. [Answers](Answers.md) are available fo
 
 Just in case, I've made available all the [files](files) that you are otherwise supposed to download throughout the practical from their original sources.
 
+[Lecture slides](StructBioInfo2018.pdf) from the lecture on 22 Feb 2018 are also available for reference.
+
 ---
 **1. Finding the right structures - UniProt and PDB.**
 
@@ -119,7 +121,7 @@ _AT THE END_
 
 If the job doesn't finish running, download the precomputed [results](files/).
 
-a) Let's see if some of the top predictions are actually close in space in our structural model. Go back to PyMOL and load the baker's yeast structure. Use the commands in section 2 above to visualise and measure distances between the top five pairs of predicted contacts. The common convention is to consider two residues in contact if their alpha carbons are within 8 Å of each other. So how well is GREMLIN doing?
+a) Let's see if some of the top predictions are actually close in space in our structural model. Go back to PyMOL and load the baker's yeast structure. Use the commands in section 2 above to visualise and measure distances between the top five pairs of predicted contacts. The common convention is to consider two residues in contact if their alpha carbons are within 8 Å of each other. So, how well is GREMLIN doing?
 
 ---
 Great job on getting to the end of this practical! I hope you enjoyed it and learned something. If you still have time remaining, feel free to repeat some of the analysis with your own favourite protein, or to explore more options available in these databases and servers.
