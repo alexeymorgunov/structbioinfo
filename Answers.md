@@ -88,3 +88,13 @@ distance dist1, i. 59 and n. CA, i. 484 and n. CA
 ```
 
 Looks like all top 5 predictions are spot on!
+
+
+
+---
+### License
+
+Many of the shell scripting exercises are taken from [Linux Shell Scripting Tutorial (LSST) v2.0](https://bash.cyberciti.biz/guide/Main_Page) under a CC-BY-NC-SA license.
+
+This material is released under a
+[CC-BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/) ![license](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png).

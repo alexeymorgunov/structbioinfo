@@ -31,7 +31,7 @@ f) Open and explore the PDB file in a text editor. If curious about the informat
 ---
 **2. Viewing the structure - PyMOL.**
 
-Start the PyMOL software. Take a quick look at [this tutorial](https://pymolwiki.org/index.php/Practical_Pymol_for_Beginners) (ignore scripting!) - skim it through to understand what's possible.
+Start the PyMOL software. Take a quick look at [this tutorial](https://pymolwiki.org/index.php/Practical_Pymol_for_Beginners) (ignore scripting!) - skim through to understand what's possible.
 
 Enter the following commands (one per line) and explore what they do.
  ```
@@ -68,14 +68,14 @@ Go back to the UniProt entry for our protein.
 b) Click through to the InterPro database entry (`CTRL-F` for "View protein in InterPro").
 - What domains and motifs does our protein contain, and are they well supported?
 - Does it match what you see in the structure?
-- What InterPro family is it part of? Here you can read a bit about this protein, if you're interested. How many members does it have and is our protein similar to the most common domain architecture in this family or is it part of a smaller subgroup?
+- What InterPro family is it part of? Here you can read a bit about this protein, if you're interested. How many members does it have? Is our protein similar to the most common domain architecture in this family or is it part of a smaller subgroup?
 
 c) From the "Structures" tab in InterPro, follow the links to SCOP and CATH database entries. Do these databases agree on the classification of the constituent domains?
 
 Go back to the UniProt entry for our protein.
 
 d) Click through to the Pfam database entry (`CTRL-F` for "View protein in Pfam"). Find the Pfam family corresponding to the core domain. Familiarise yourself with the available information. You can even find the HMM profile for this Pfam family here.
-- Let's download the family sequence alignment. We'll need it later for predicting contacts using coevolution. Go to the "Alignments" tab and in "format an alignment" choose UniProt, FASTA, tree, all upper case, gaps as dashes, download.
+- Let's download the family sequence alignment. You'll need it later for predicting contacts using coevolution (but only if you choose to use your own alignment). Go to the "Alignments" tab and in "format an alignment" choose UniProt, FASTA, tree, all upper case, gaps as dashes, download.
 
 ---
 **4. What if we don't have a structure?**
@@ -105,7 +105,7 @@ cealign mymodel, protein
 
 What's our RMSD? Is that a good alignment? Is it surprising to find that?
 
-e) Let's compare this alignment to an alignment between two proteins, both with experimentally derived structural models. Find the human arginine-tRNA synthetase and repeat the alignment. You could also run a sequence alignment to compare to.
+e) Let's compare this alignment to an alignment between two proteins, both with experimentally derived structural models. Find the human arginine-tRNA synthetase and align it to the _S. cerevisiae_ protein. You could also run a sequence alignment to compare to.
 
 ---
 **5. Coevolutionary analysis**
@@ -126,3 +126,12 @@ a) Let's see if some of the top predictions are actually close in space in our s
 Great job on getting to the end of this practical! I hope you enjoyed it and learned something. If you still have time remaining, feel free to repeat some of the analysis with your own favourite protein, or to explore more options available in these databases and servers.
 
 If you have any questions or comments, don't hesitate to email me: asm63[at]cam.ac.uk.
+
+
+---
+### License
+
+Many of the shell scripting exercises are taken from [Linux Shell Scripting Tutorial (LSST) v2.0](https://bash.cyberciti.biz/guide/Main_Page) under a CC-BY-NC-SA license.
+
+This material is released under a
+[CC-BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/) ![license](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png).
