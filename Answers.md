@@ -12,6 +12,14 @@ d) They are all quite similar in quality and it seems there are only two indepen
 
 e) The unit cell contains eight molecules. Some outer regions have lower quality, unsurprisingly.
 
+f)
+```
+cat 1f7u.pdb | grep ^ATOM | grep -E '^.{21}A' | cut -c18-26 | grep " A " | uniq | cut -d" " -f1 > sequence.txt
+cat 1f7u.pdb | grep ^SEQRES | grep -E '^.{11}A' | cut -c20- | tr " " "\n" | sed '/^$/d' > sequence2.txt
+diff sequence.txt sequence2.txt
+```
+The N-terminal methionine is missing from the actual structural model but is present in the SEQRES field. That is because the full gene sequence was used in protein expression, but the methionine is subsequently cleaved in the yeast cell, and so the protein that actually crystallises doesn't have it. So UniProt listing the PDB model as starting at position 1 is actually wrong!
+
 **2. Viewing the structure - PyMOL.**
 
 **3. Interesting databases.**

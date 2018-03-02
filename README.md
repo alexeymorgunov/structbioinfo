@@ -21,6 +21,10 @@ d) Find the table listing available 3D structure models. Choose the link destina
 
 e) While you're on the PDB database, take a look around at the available information. There is a tab for viewing the structural model in browser. You can use that to check if the unit cell contains one or more molecules. There are quick settings to colour the molecule by properties such as the B factor. Are there any patterns as to which regions contain lower quality residues?
 
+f) Open and explore the PDB file in a text editor. If curious about the information contained in some fields, you can look them up [here](http://www.wwpdb.org/documentation/file-format-content/format33/v3.3.html) or more briefly for the coordinate entries [here](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/tutorials/pdbintro.html).
+_optional_
+- Check if you still remember how to process text files in [Unix shell](https://github.com/alexeymorgunov/unixshellcourse)! Check if the sequence from ATOM instances matches the one in SEQRES in our structural model. (Make sure you choose the correct chain!)
+
 ---
 **2. Viewing the structure - PyMOL.**
 
