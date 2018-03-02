@@ -31,7 +31,7 @@ _optional_
 Start the PyMOL software. Take a quick look at [this tutorial](https://pymolwiki.org/index.php/Practical_Pymol_for_Beginners) (ignore scripting!) - skim it through to understand what's possible.
 
 Enter the following commands (one per line) and explore what they do.
- ```bash
+ ```pymol
 fetch 1f7u
 select heteroatoms, hetatm
 select protein, chain A
@@ -84,7 +84,7 @@ b) Let's build ourselves a structural model of the _C. albicans_ protein by homo
 c) Check the _C. albicans_ protein for disorder. Go to [IUPred](http://iupred.enzim.hu/) and submit the A0A1D8PCI5 sequence. Which region in the alignment does the most disordered part correspond to? Does this make sense when you look at the homology model?
 
 d) Let's see how similar our homology model is to the original structural model. Go to PyMOL again and do the following:
- ```bash
+ ```pymol
 reinitialize
 fetch 1f7u
 hide everything
