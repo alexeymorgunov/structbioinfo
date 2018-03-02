@@ -17,7 +17,7 @@ a) Go to [UniProt](http://www.uniprot.org/) and find the entry corresponding to 
 
 b) Download the `.fasta` file containing the sequence of our protein. We'll need it later. Also add it to the basket on the website.
 
-At this stage, quickly jump to section 5 below and submit the sequence for coevolutionary analysis.
+At this stage, quickly jump to section 5 below and submit the sequence for coevolutionary analysis. It takes very long to run and might not finish during the practical but let's give it a fair try! (If it doesn't finish, output files are provided.)
 
 c) Note down the residue numbers interacting with ligands. We'll visualise them later.
 
@@ -26,8 +26,7 @@ d) Find the table listing available 3D structure models. Choose the link destina
 e) While you're on the PDB database, take a look around at the available information. There is a tab for viewing the structural model in browser. You can use that to check if the unit cell contains one or more molecules. There are quick settings to colour the molecule by properties such as the B factor. Are there any patterns as to which regions contain lower quality residues? You can also visit the PDBsum entry (follow the link on UniProt in the PDB table) to familiarise yourself with the structural model's layout.
 
 f) Open and explore the PDB file in a text editor. If curious about the information contained in some fields, you can look them up [here](http://www.wwpdb.org/documentation/file-format-content/format33/v3.3.html) or more briefly for the coordinate entries [here](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/tutorials/pdbintro.html).
-_optional_
-- Check if you still remember how to process text files in [Unix shell](https://github.com/alexeymorgunov/unixshellcourse)! Check if the sequence from ATOM instances matches the one in SEQRES in our structural model. (Make sure you choose the correct chain!)
+- _Optional._ Check if you still remember how to process text files in [Unix shell](https://github.com/alexeymorgunov/unixshellcourse)! Check if the sequence from ATOM instances matches the one in SEQRES in our structural model. (Make sure you choose the correct chain!)
 
 ---
 **2. Viewing the structure - PyMOL.**
