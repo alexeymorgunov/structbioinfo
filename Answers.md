@@ -73,6 +73,8 @@ The RMSD should be around 3.88. Unsurprisingly, this is worse than the previous 
 ---
 **5. Coevolutionary analysis**
 
+[Completed job](http://gremlin.bakerlab.org/sub.php?id=1520023781).
+
 a) Possible command sequence below.
 ```
 reinitialize
@@ -85,4 +87,4 @@ color green, protein
 distance dist1, i. 59 and n. CA, i. 484 and n. CA
 ```
 
-Looks like all top 5 predictions are spot on! 
+Looks like all top 5 predictions are spot on!
