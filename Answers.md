@@ -14,7 +14,7 @@ d) They are all quite similar in quality and it seems there are only two indepen
 e) The unit cell contains eight molecules. Some outer regions have lower quality, unsurprisingly. [PDBsum](https://www.ebi.ac.uk/pdbsum/1F7U).
 
 f)
-```
+  ```bash
 cat 1f7u.pdb | grep ^ATOM | grep -E '^.{21}A' | cut -c18-26 | grep " A " | uniq | cut -d" " -f1 > sequence.txt
 cat 1f7u.pdb | grep ^SEQRES | grep -E '^.{11}A' | cut -c20- | tr " " "\n" | sed '/^$/d' > sequence2.txt
 diff sequence.txt sequence2.txt
