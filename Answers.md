@@ -84,7 +84,15 @@ select protein, chain A
 deselect
 show ribbon, protein
 color green, protein
-distance dist1, i. 59 and n. CA, i. 484 and n. CA
+distance dist1, i. 554 and n. CA, i. 595 and n. CA
+select contact, chain A and resi 127 or resi 531
+show sticks, contact
+distance dist2, i. 127, i. 531, cutoff=5
+distance dist3, i. 102 and n. CA, i. 113 and n. CA
+distance dist4, i. 144 and n. CA, i. 182 and n. CA
+distance dist8, i. 177, i. 185, cutoff=5
+select contact2, chain A and resi 177 or resi 185
+show sticks, contact2
 ```
 
 Looks like all top 5 predictions are spot on!

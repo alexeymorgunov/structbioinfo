@@ -118,9 +118,9 @@ Go to [GREMLIN](http://gremlin.bakerlab.org/submit.php) and enter the sequence f
 
 _AT THE END_
 
-If the job doesn't finish running, download the precomputed [results](files/).
+If the job doesn't finish running, view [online](http://gremlin.bakerlab.org/sub.php?id=1520023781) or download the precomputed [results](files/gremlin.zip).
 
-a) Let's see if some of the top predictions are actually close in space in our structural model. Go back to PyMOL and load the baker's yeast structure. Use the commands in section 2 above to visualise and measure distances between the top five pairs of predicted contacts. The common convention is to consider two residues in contact if their alpha carbons are within 8 Å of each other. So, how well is GREMLIN doing?
+a) Let's see if some of the top predictions are actually close in space in our structural model. Go back to PyMOL and load the baker's yeast structure. Use the commands in section 2 above to visualise and measure distances between the top five pairs of predicted contacts. The common convention is to consider two residues in contact if any of their non-hydrogen atoms are within 5 Å of each other. A less stringent (and easier to compute) way is to consider if their alpha carbons are within 8 Å of each other. Also, consider only pairs that are more than 5 residues apart in sequence. So, how well is GREMLIN doing?
 
 ---
 Great job on getting to the end of this practical! I hope you enjoyed it and learned something. If you still have time remaining, feel free to repeat some of the analysis with your own favourite protein, or to explore more options available in these databases and servers.
