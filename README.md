@@ -4,7 +4,7 @@
 
 Instructions for the practical are below. [Answers](Answers.md) are available for reference.
 
-Just in case, I've made available all the [files](files) that you are otherwise supposed to download throughout the practical from their original sources.
+Just in case, I've made available all the [files](files) that you are otherwise supposed to download throughout the practical from their original sources. This may be useful if some analyses take too long to run on the servers. Check the relevant section in [Answers](Answers.md) for the exact links.
 
 [Lecture slides](StructBioInfo2018.pdf) from the lecture on 22 Feb 2018 are also available for reference.
 
@@ -23,7 +23,7 @@ c) Note down the residue numbers interacting with ligands. We'll visualise them 
 
 d) Find the table listing available 3D structure models. Choose the link destination to be RCSB PDB. Click through to all available structure models and check their quality indicators. Which one do you think we should choose to look at? Download the `.pdb` file.
 
-e) While you're on the PDB database, take a look around at the available information. There is a tab for viewing the structural model in browser. You can use that to check if the unit cell contains one or more molecules. There are quick settings to colour the molecule by properties such as the B factor. Are there any patterns as to which regions contain lower quality residues? You can also visit the PDBsum entry (follow the link on UniProt in the PDB table) to familiarise yourself with the structural model's layout.
+e) While you're on the PDB database, take a look around at the available information. There is a tab for viewing the structural model in browser. You can use that to check if the unit cell contains one or more molecules. There are quick settings to colour the molecule by properties such as the B factor. Are there any patterns regarding which regions contain lower quality residues? You can also visit the PDBsum entry (follow the link on UniProt in the PDB table) to familiarise yourself with the structural model's layout.
 
 f) Open and explore the PDB file in a text editor. If curious about the information contained in some fields, you can look them up [here](http://www.wwpdb.org/documentation/file-format-content/format33/v3.3.html) or more briefly for the coordinate entries [here](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/tutorials/pdbintro.html).
 - _Optional._ Check if you still remember how to process text files in [Unix shell](https://github.com/alexeymorgunov/unixshellcourse)! Check if the sequence from ATOM instances matches the one in SEQRES in our structural model. (Make sure you choose the correct chain!)
@@ -33,7 +33,7 @@ f) Open and explore the PDB file in a text editor. If curious about the informat
 
 Start the PyMOL software. Take a quick look at [this tutorial](https://pymolwiki.org/index.php/Practical_Pymol_for_Beginners) (ignore scripting!) - skim through to understand what's possible.
 
-Enter the following commands (one per line) and explore what they do.
+Let's play around with our structure to familiarise ourselves with it. Enter the following commands (one per line) and explore what they do.
  ```
 fetch 1f7u
 select heteroatoms, hetatm
@@ -56,26 +56,26 @@ hide everything, mydist
 distance mydist2, i. 59-60, i. 484-498, mode=4
 ```
 
-We are not doing a PyMOL practical today so the above is just to quickly familiarise you with the syntax. You can always refer to [documentation](https://pymol.org/dokuwiki/doku.php?id=) for more useful commands.
+We are not doing a PyMOL practical today so the above is just to quickly familiarise you with the syntax. You can always refer to [documentation](https://pymol.org/dokuwiki/doku.php) for more useful commands.
 
 ---
 **3. Interesting databases.**
 
-a) Go to [ConSurf](http://consurf.tau.ac.il/) to map evolutionary conservation onto protein structure. Choose amino acids, known protein structure YES, enter our PDB ID, NO MSA, keep everything else default or automatic. Submit the job. It will take some time to run. Move on with questions and come back to analyse the output when it is done (10-15 min). It is best to view the results in browser with NGL viewer, and set the style to "spacefill". Are the results unexpected?
+a) Go to [ConSurf](http://consurf.tau.ac.il/) to map evolutionary conservation onto protein structure. Choose the following settings: amino acids, known protein structure YES, enter our PDB ID, NO MSA, keep everything else default or automatic. Submit the job. It will take some time to run. Move on with questions and come back to analyse the output when it is done (10-15 min). It is best to view the results in browser with NGL viewer, and set the style to "spacefill". Are the results unexpected?
 
 Go back to the UniProt entry for our protein.
 
 b) Click through to the InterPro database entry (`CTRL-F` for "View protein in InterPro").
-- What domains and motifs does our protein contain, and are they well supported?
+- What domains and motifs does our protein contain, and are they well supported? (What's the evidence for them?)
 - Does it match what you see in the structure?
-- What InterPro family is it part of? Here you can read a bit about this protein, if you're interested. How many members does it have? Is our protein similar to the most common domain architecture in this family or is it part of a smaller subgroup?
+- What InterPro family is it part of? Here you can read a bit about this protein, if you're interested. How many members does the family have? Is our protein similar to the most common domain architecture in this family or is it part of a smaller subgroup?
 
 c) From the "Structures" tab in InterPro, follow the links to SCOP and CATH database entries. Do these databases agree on the classification of the constituent domains?
 
 Go back to the UniProt entry for our protein.
 
 d) Click through to the Pfam database entry (`CTRL-F` for "View protein in Pfam"). Find the Pfam family corresponding to the core domain. Familiarise yourself with the available information. You can even find the HMM profile for this Pfam family here.
-- Let's download the family sequence alignment. You'll need it later for predicting contacts using coevolution (but only if you choose to use your own alignment). Go to the "Alignments" tab and in "format an alignment" choose UniProt, FASTA, tree, all upper case, gaps as dashes, download.
+- Let's download the family sequence alignment. You'll need it later for predicting contacts using coevolution (but only if you choose to use your own alignment). Go to the "Alignments" tab and in "format an alignment" choose the following settings: UniProt, FASTA, tree, all upper case, gaps as dashes, download.
 
 ---
 **4. What if we don't have a structure?**
@@ -84,9 +84,9 @@ a) What if we are not interested in the (arguably) overstudied baker's yeast? Le
 
 b) Let's build ourselves a structural model of the _C. albicans_ protein by homology modelling. Go to [SWISS-MODEL](https://swissmodel.expasy.org/). Select "Target-Template Alignment" and upload our alignment `.fasta` file. Choose the correct PDB file to build with. Let it run, get some coffee and try the next question.
 
-c) Check the _C. albicans_ protein for disorder. Go to [IUPred](http://iupred.enzim.hu/) and submit the A0A1D8PCI5 sequence. Which region in the alignment does the most disordered part correspond to? Does this make sense when you look at the homology model?
+c) Check the _C. albicans_ protein for disorder. Go to [IUPred](http://iupred.enzim.hu/) and submit the A0A1D8PCI5 sequence (from the `.fasta` file). Which region in the alignment does the most disordered part correspond to? Does this make sense when you look at the homology model?
 
-d) Let's see how similar our homology model is to the original structural model. Go to PyMOL again and do the following:
+d) Let's see how similar our homology model is to the original structural model. Go to PyMOL again and enter the following commands:
  ```
 reinitialize
 fetch 1f7u
@@ -95,7 +95,7 @@ select protein, chain A
 deselect
 show cartoon, protein
 color green, protein
-load ~/Downloads/model.pdb #check location!
+load ~/Downloads/model.pdb    #check your location!
 select mymodel, model_
 deselect
 show cartoon, mymodel
@@ -118,9 +118,9 @@ Go to [GREMLIN](http://gremlin.bakerlab.org/submit.php) and enter the sequence f
 
 _AT THE END_
 
-If the job doesn't finish running, view [online](http://gremlin.bakerlab.org/sub.php?id=1520023781) or download the precomputed [results](files/gremlin.zip).
+If the job hasn't finished running, view [online](http://gremlin.bakerlab.org/sub.php?id=1520023781) or download the precomputed [results](files/gremlin.zip).
 
-a) Let's see if some of the top predictions are actually close in space in our structural model. Go back to PyMOL and load the baker's yeast structure. Use the commands in section 2 above to visualise and measure distances between the top five pairs of predicted contacts. The common convention is to consider two residues in contact if any of their non-hydrogen atoms are within 5 Å of each other. A less stringent (and easier to compute) way is to consider if their alpha carbons are within 8 Å of each other. Also, consider only pairs that are more than 5 residues apart in sequence. So, how well is GREMLIN doing?
+a) Let's see if some of the top predictions are actually close in space in our structural model. Go back to PyMOL and load the _S. cerevisiae_ structure. Use the commands similar to those in section 2 above to visualise and measure distances between the top five pairs of predicted contacts. The common convention is to consider two residues in contact if any of their non-hydrogen atoms are within 5 Å of each other. A less stringent (and easier to compute) way is to consider if their alpha carbons are within 8 Å of each other. Also, consider only pairs that are more than 5 residues apart in sequence. So, how well is GREMLIN doing?
 
 ---
 Great job on getting to the end of this practical! I hope you enjoyed it and learned something. If you still have time remaining, feel free to repeat some of the analysis with your own favourite protein, or to explore more options available in these databases and servers.
