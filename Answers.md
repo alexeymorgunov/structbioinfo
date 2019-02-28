@@ -44,7 +44,11 @@ d) [tRNA-synt_1d](http://pfam.xfam.org/family/tRNA-synt_1d).
 ---
 **4. What if we don't have a structure?**
 
+UPDATE LINK
+
 a) [Alignment](http://www.uniprot.org/align/A2018030283C3DD8CE55183C76102DC5D3A26728B0A99479). (Link will expire on 9 Mar 2018.) Very similar sequences, 64.4% identity means this is definitely the same protein. Notice a small insertion in the _C. albicans_ version. Downloaded [alignment](files/alignment.fasta).
+
+UPDATE LINK
 
 b) [Results](https://swissmodel.expasy.org/interactive/fQ9e8F/). (Link may expire.) Full [results archive](files/homology_modelling_results.zip) and the [PDB model](model.pdb) only.
 
@@ -68,6 +72,10 @@ show cartoon, protein2
 color yellow, protein2
 cealign protein, protein2
 ```
+
+UPDATE LINK
+
+
 The RMSD should be around 3.88. Unsurprisingly, this is worse than the previous alignment but still a very good score. Visual assessment should confirm that the proteins are very similar to each other. Baker's yeast and humans are quite far apart on the evolutionary tree, with sequence identity of only 24% ([alignment](http://www.uniprot.org/align/A20180302A7434721E10EE6586998A056CCD0537E46DB9EF) - link will expire on 9 Mar 2018) but with very strong structural homology. Structure is indeed much better conserved than sequence!
 
 ---

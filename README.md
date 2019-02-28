@@ -1,12 +1,12 @@
 # Structural bioinformatics practical
 
-**Part II BBS Bioinformatics** - 16:00-18:00, 5 Mar 2018
+**Part II BBS Bioinformatics** - 15:00-17:00, 11 Mar 2019
 
 Instructions for the practical are below. [Answers](Answers.md) are available for reference.
 
-Just in case, I've made available all the [files](files) that you are otherwise supposed to download throughout the practical from their original sources. This may be useful if some analyses take too long to run on the servers. Check the relevant section in [Answers](Answers.md) for the exact links.
+Just in case, I've made available all the [files](files) that you are otherwise supposed to download throughout the practical from their original sources. This may be useful if some analyses take too long to run on the servers, the servers are down (happens more often than you'd think!) or if they fail to run for some unexplained reason. Check the relevant section in [Answers](Answers.md) for the exact links.
 
-[Lecture slides](StructBioInfo2018.pdf) from the lecture on 22 Feb 2018 are also available for reference.
+[Lecture slides](StructBioInfo2019.pdf) from the lecture on 5 Mar 2019 are also available for reference.
 
 ---
 **1. Finding the right structures - UniProt and PDB.**
@@ -31,7 +31,7 @@ f) Open and explore the PDB file in a text editor. If curious about the informat
 ---
 **2. Viewing the structure - PyMOL.**
 
-Start the PyMOL software. Take a quick look at [this tutorial](https://pymolwiki.org/index.php/Practical_Pymol_for_Beginners) (ignore scripting!) - skim through to understand what's possible.
+Start the PyMOL software. (If you don't have it installed, you can download it [here](https://pymol.org/2/).) Take a quick look at [this tutorial](https://pymolwiki.org/index.php/Practical_Pymol_for_Beginners) (ignore scripting!) - skim through to understand what's possible.
 
 Let's play around with our structure to familiarise ourselves with it. Enter the following commands (one per line) and explore what they do.
  ```
@@ -110,13 +110,9 @@ e) Let's compare this alignment to an alignment between two proteins, both with 
 ---
 **5. Coevolutionary analysis**
 
-_AT THE START_
-
 To run a good coevolutionary analysis, it is best to have the software running on your own machine but some servers exist for quick and dirty analysis. We'll do one such analysis - don't expect the very best results!
 
-Go to [GREMLIN](http://gremlin.bakerlab.org/submit.php) and enter the sequence for the _S. cerevisiae_ protein. Keep all the parameters as default. Enter your email to get notified when it completes. Let it run, it will take a while. Come back to this at the very end.
-
-_AT THE END_
+Go to [GREMLIN](http://gremlin.bakerlab.org/submit.php) and enter the sequence for the _S. cerevisiae_ protein. Keep all the parameters as default. Enter your email to get notified when it completes. Let it run, it will take a while (or if your settings exactly match mine, you'll get the precomputed results immediately).
 
 If the job hasn't finished running, view [online](http://gremlin.bakerlab.org/sub.php?id=1520023781) or download the precomputed [results](files/gremlin.zip).
 
