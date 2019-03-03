@@ -86,23 +86,24 @@ a) What if we are not interested in the (arguably) overstudied baker's yeast? Le
 
 b) Let's build ourselves a structural model of the _C. albicans_ protein by homology modelling. Go to [SWISS-MODEL](https://swissmodel.expasy.org/). Select "Target-Template Alignment" and upload our alignment `.fasta` file. Choose the correct PDB file to build with. Let it run, get some coffee and try the next question.
 
-c) Check the _C. albicans_ protein for disorder. Go to [IUPred](http://iupred.enzim.hu/) and submit the A0A1D8PCI5 sequence (from the `.fasta` file). Which region in the alignment does the most disordered part correspond to? Does this make sense when you look at the homology model?
+c) Check the _C. albicans_ protein for disorder. Go to [IUPred](https://iupred2a.elte.hu/) and submit the A0A1D8PCI5 sequence (copy and paste from the `.fasta` file - uploading the file directly doesn't produce plots). Which region in the alignment does the most disordered part correspond to? Does this make sense when you look at the homology model?
 
 d) Let's see how similar our homology model is to the original structural model. Go to PyMOL again and enter the following commands:
  ```
 reinitialize
 fetch 1f7u
 hide everything
-select protein, chain A
+select cerev, chain A
 deselect
-show cartoon, protein
-color green, protein
+show cartoon, cerev
+color green, cerev
 load ~/Downloads/model.pdb    #check your location!
-select mymodel, model_
+select albic, model_
 deselect
-show cartoon, mymodel
-color yellow, mymodel
-cealign mymodel, protein
+hide everything, albic
+show cartoon, albic
+color blue, albic
+cealign albic, cerev
 ```
 
 What's our RMSD? Is that a good alignment? Is it surprising to find that?

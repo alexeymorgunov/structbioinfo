@@ -48,35 +48,30 @@ UPDATE LINK
 
 a) [Alignment](http://www.uniprot.org/align/A2018030283C3DD8CE55183C76102DC5D3A26728B0A99479). (Link will expire on 9 Mar 2018.) Very similar sequences, 64.4% identity means this is definitely the same protein. Notice a small insertion in the _C. albicans_ version. Downloaded [alignment](files/alignment.fasta).
 
-UPDATE LINK
-
-b) [Results](https://swissmodel.expasy.org/interactive/fQ9e8F/). (Link may expire.) Full [results archive](files/homology_modelling_results.zip) and the [PDB model](model.pdb) only.
+b) [Results](https://swissmodel.expasy.org/interactive/TZS3Bm/). (Link may expire.) Full [results archive](files/homology_modelling_results.zip) and the [PDB model](model.pdb) only.
 
 c) The disordered part corresponds to the insertion. Our homology model shows this region to be on the surface of the protein, a loop insertion. This makes perfect sense structurally. Clearly, we shouldn't trust the model in this region - we don't know how this loop folds in reality or whether it even has a stable conformation.
 
-d) RMSD should be around 1.46. It is not surprising at all - we modelled an almost identical sequence with only a single insertion into a known structure. Any larger RMSD would in fact be worrying.
+d) RMSD should be around 0.32. It is not surprising at all - we modelled an almost identical sequence with only a single insertion into a known structure. Any larger RMSD would in fact be worrying.
 
-e) The human protein is [P54136](http://www.uniprot.org/uniprot/P54136) with PDB structural model [4ZAJ](https://www.rcsb.org/structure/4ZAJ). PDB file is [here](files/4zaj.pdb).
+e) The human protein is [P54136](http://www.uniprot.org/uniprot/P54136) with PDB structural model [4ZAJ](https://www.rcsb.org/structure/4ZAJ). PDB file is [here](files/4zaj.pdb). (You may need to reload `1F7U` if you have changed things in PyMOL after the previous exercise - follow the commands until loading the model.)
 ```
-reinitialize
-fetch 1f7u
-hide everything
-select protein, chain A
-deselect
-show cartoon, protein
-color green, protein
 fetch 4zaj
-select protein2, chain A in 4zaj
+select protein2, resi 1-588 in chain A in 4zaj
 deselect
-show cartoon, protein2
-color yellow, protein2
-cealign protein, protein2
+hide everything
+show cartoon, cerev
+center
+show cartoon, human
+color pink, human
+cealign human, cerev
+center
 ```
 
 UPDATE LINK
 
 
-The RMSD should be around 3.88. Unsurprisingly, this is worse than the previous alignment but still a very good score. Visual assessment should confirm that the proteins are very similar to each other. Baker's yeast and humans are quite far apart on the evolutionary tree, with sequence identity of only 24% ([alignment](http://www.uniprot.org/align/A20180302A7434721E10EE6586998A056CCD0537E46DB9EF) - link will expire on 9 Mar 2018) but with very strong structural homology. Structure is indeed much better conserved than sequence!
+The RMSD should be around 3.88. Unsurprisingly, this is worse than the previous alignment but still a very good score. Visual assessment should confirm that the proteins are very similar to each other. Baker's yeast and humans are quite far apart on the evolutionary tree, with sequence identity for this essential protein of only 24% ([alignment](http://www.uniprot.org/align/A20180302A7434721E10EE6586998A056CCD0537E46DB9EF) - link will expire on 9 Mar 2018) but with very strong structural homology. Structure is indeed much better conserved than sequence!
 
 ---
 **5. Coevolutionary analysis**
