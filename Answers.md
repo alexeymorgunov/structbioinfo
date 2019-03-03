@@ -57,7 +57,7 @@ d) RMSD should be around 0.32. It is not surprising at all - we modelled an almo
 e) The human protein is [P54136](http://www.uniprot.org/uniprot/P54136) with PDB structural model [4ZAJ](https://www.rcsb.org/structure/4ZAJ). PDB file is [here](files/4zaj.pdb). (You may need to reload `1F7U` if you have changed things in PyMOL after the previous exercise - follow the commands until loading the model.)
 ```
 fetch 4zaj
-select protein2, resi 1-588 in chain A in 4zaj
+select human, resi 1-588 in chain A in 4zaj
 deselect
 hide everything
 show cartoon, cerev
@@ -93,7 +93,7 @@ show sticks, contact
 distance dist2, i. 127, i. 531, cutoff=5
 distance dist3, i. 102 and n. CA, i. 113 and n. CA
 distance dist4, i. 144 and n. CA, i. 182 and n. CA
-distance dist8, i. 177, i. 185, cutoff=5
+distance dist5, i. 177, i. 185, cutoff=5
 select contact2, chain A and resi 177 or resi 185
 show sticks, contact2
 ```

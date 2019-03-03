@@ -117,7 +117,7 @@ To run a good coevolutionary analysis, it is best to have the software running o
 
 Go to [GREMLIN](http://gremlin.bakerlab.org/submit.php) and enter the sequence for the _S. cerevisiae_ protein. Keep all the parameters as default. Enter your email to get notified when it completes. Let it run, it will take a while (or if your settings exactly match mine, you'll get the precomputed results immediately).
 
-If the job hasn't finished running, view [online](http://gremlin.bakerlab.org/sub.php?id=1520023781) or download the precomputed [results](files/gremlin.zip).
+If the job takes too long to finish, view [online](http://gremlin.bakerlab.org/sub.php?id=1520023781) or download the precomputed [results](files/gremlin.zip).
 
 a) Let's see if some of the top predictions are actually close in space in our structural model. Go back to PyMOL and load the _S. cerevisiae_ structure. Use the commands similar to those in section 2 above to visualise and measure distances between the top five pairs of predicted contacts. The common convention is to consider two residues in contact if any of their non-hydrogen atoms are within 5 Å of each other. A less stringent (and easier to compute) way is to consider if their alpha carbons are within 8 Å of each other. Also, consider only pairs that are more than 5 residues apart in sequence. So, how well is GREMLIN doing?
 
