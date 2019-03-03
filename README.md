@@ -17,8 +17,6 @@ a) Go to [UniProt](http://www.uniprot.org/) and find the entry corresponding to 
 
 b) Download the `.fasta` file containing the sequence of our protein. We'll need it later. Also add it to the basket on the website.
 
-At this stage, quickly jump to section 5 below and submit the sequence for coevolutionary analysis. It takes very long to run and might not finish during the practical but let's give it a fair try! (If it doesn't finish, output files are provided.)
-
 c) Note down the residue numbers interacting with ligands. We'll visualise them later.
 
 d) Find the table listing available 3D structure models. Choose the link destination to be RCSB PDB. Click through to all available structure models and check their quality indicators. Which one do you think we should choose to look at? Download the `.pdb` file.
@@ -34,12 +32,16 @@ f) Open and explore the PDB file in a text editor. If curious about the informat
 Start the PyMOL software. (If you don't have it installed, you can download it [here](https://pymol.org/2/).) Take a quick look at [this tutorial](https://pymolwiki.org/index.php/Practical_Pymol_for_Beginners) (ignore scripting!) - skim through to understand what's possible.
 
 Let's play around with our structure to familiarise ourselves with it. Enter the following commands (one per line) and explore what they do.
+
+If at any point things start looking weird and you don't know what's going on, `reinitialize` will get you back to the starting point but all progress will be lost.
+
  ```
 fetch 1f7u
 select heteroatoms, hetatm
 select protein, chain A
 select tRNA, chain B
-hide everything, (heteroatoms, RNA, protein)
+hide everything, (heteroatoms, tRNA, protein)
+deselect
 show sticks, tRNA
 show cartoon, protein
 spectrum count, rainbow, protein, byres=1

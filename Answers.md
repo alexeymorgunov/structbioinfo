@@ -29,12 +29,12 @@ No questions here.
 ---
 **3. Interesting databases.**
 
-a) [Results](http://consurf.tau.ac.il/results/1520018269/output.php). (Link will expire by end of May.) Full [results archive](files/consurf_results.zip). Core of the protein is more conserved, surfaces involved in interacting with the tRNA are also very conserved but outer regions are more variable - exactly what we'd expect. Functional parts and the core of a protein are typically more conserved than outer regions or functionally less important parts. Therefore, evolutionary conservation can help localise the active site or interacting surfaces.
+a) [Results](http://consurf.tau.ac.il/results/1551476465/output.php). (Link will expire by end of March.) Full [results archive](files/consurf_results.zip). Core of the protein is more conserved, surfaces involved in interacting with the tRNA are also very conserved but outer regions are more variable - exactly what we'd expect. Functional parts and the core of a protein are typically more conserved than outer regions or functionally less important parts. Therefore, evolutionary conservation can help localise the active site or interacting surfaces.
 
 b) [InterPro](https://www.ebi.ac.uk/interpro/protein/Q05506).
 - 3 domains - ArgRS NTD, catalytic core and DALR anticodon binding. Some motifs including HIGH and KMSK. Multiple databases agree on the predictions, good support.
 - Yes, we should see three domains in the structure quite well.
-- It is part of [IPR001278](http://www.ebi.ac.uk/interpro/entry/IPR001278) with over 28,000 proteins. Our domain architecture is the most common.
+- It is part of [IPR001278](http://www.ebi.ac.uk/interpro/entry/IPR001278) with over 37,000 proteins. (It was just 28,000 in 2018!) Our domain architecture is the most common.
 
 c) The two databases disagree. SCOP entries are manually annotated and thus are more detailed/less error-prone. CATH is mostly automated so covers more proteins but is less precise, as you can see from the comparison.
 
