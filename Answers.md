@@ -44,9 +44,7 @@ d) [tRNA-synt_1d](http://pfam.xfam.org/family/tRNA-synt_1d).
 ---
 **4. What if we don't have a structure?**
 
-UPDATE LINK
-
-a) [Alignment](http://www.uniprot.org/align/A2018030283C3DD8CE55183C76102DC5D3A26728B0A99479). (Link will expire on 9 Mar 2018.) Very similar sequences, 64.4% identity means this is definitely the same protein. Notice a small insertion in the _C. albicans_ version. Downloaded [alignment](files/alignment.fasta).
+a) [Alignment](https://www.uniprot.org/align/A201903106746803381A1F0E0DB47453E0216320D3911E0O). (Link will expire on 17 Mar 2019.) Very similar sequences, 64.4% identity means this is definitely the same protein. Notice a small insertion in the _C. albicans_ version. Downloaded [alignment](files/alignment.fasta).
 
 b) [Results](https://swissmodel.expasy.org/interactive/TZS3Bm/). (Link may expire.) Full [results archive](files/homology_modelling_results.zip) and the [PDB model](model.pdb) only.
 
@@ -67,11 +65,7 @@ color pink, human
 cealign human, cerev
 center
 ```
-
-UPDATE LINK
-
-
-The RMSD should be around 3.88. Unsurprisingly, this is worse than the previous alignment but still a very good score. Visual assessment should confirm that the proteins are very similar to each other. Baker's yeast and humans are quite far apart on the evolutionary tree, with sequence identity for this essential protein of only 24% ([alignment](http://www.uniprot.org/align/A20180302A7434721E10EE6586998A056CCD0537E46DB9EF) - link will expire on 9 Mar 2018) but with very strong structural homology. Structure is indeed much better conserved than sequence!
+The RMSD should be around 3.88. Unsurprisingly, this is worse than the previous alignment but still a very good score. Visual assessment should confirm that the proteins are very similar to each other. Baker's yeast and humans are quite far apart on the evolutionary tree, with sequence identity for this essential protein of only 24% ([alignment](https://www.uniprot.org/align/A201903106746803381A1F0E0DB47453E0216320D3911EFZ) - link will expire on 17 Mar 2019) but with very strong structural homology. Structure is indeed much better conserved than sequence!
 
 ---
 **5. Coevolutionary analysis**
