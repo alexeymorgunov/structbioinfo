@@ -37,12 +37,9 @@ b) [InterPro](https://www.ebi.ac.uk/interpro/protein/Q05506).
 - It is part of [IPR001278](http://www.ebi.ac.uk/interpro/entry/IPR001278) with over 37,000 proteins. (It was just 28,000 in 2018!) Our domain architecture is the most common.
 
 c) The two databases disagree. SCOP entries are manually annotated and thus are more detailed/less error-prone. CATH is mostly automated so covers more proteins but is less precise, as you can see from the comparison.
-
-N-terminal domain: [CATH](http://www.cathdb.info/version/v4_2_0/superfamily/3.30.1360.70/classification) and [SCOP](http://scop.mrc-lmb.cam.ac.uk/scop/data/scop.b.e.bfi.c.b.html) - note the different hierarchical levels.
-
-Catalytic domain: [CATH](http://www.cathdb.info/version/v4_2_0/superfamily/1.10.730.10/classification) and [SCOP](http://scop.mrc-lmb.cam.ac.uk/scop/data/scop.b.d.da.b.b.html) - here, SCOP correctly classifies the Class I tRNA synthetase catalytic domains, but CATH shows a group for Ile tRNA synthetase catalytic domains even though our protein is an Arg tRNA synthetase! Also worth noting the "mainly alpha" and "alpha and beta" discrepancy at the highest level.
-
-tRNA binding domain: [CATH](http://www.cathdb.info/version/v4_2_0/superfamily/3.40.50.620/classification) and [SCOP](http://scop.mrc-lmb.cam.ac.uk/scop/data/scop.b.b.ea.b.b.html) - completely different classification levels, especially noteworthy the top level "alpha beta" vs "all alpha" discrepancy.
+- N-terminal domain: [CATH](http://www.cathdb.info/version/v4_2_0/superfamily/3.30.1360.70/classification) and [SCOP](http://scop.mrc-lmb.cam.ac.uk/scop/data/scop.b.e.bfi.c.b.html) - note the different hierarchical levels.
+- Catalytic domain: [CATH](http://www.cathdb.info/version/v4_2_0/superfamily/1.10.730.10/classification) and [SCOP](http://scop.mrc-lmb.cam.ac.uk/scop/data/scop.b.d.da.b.b.html) - here, SCOP correctly classifies the Class I tRNA synthetase catalytic domains, but CATH shows a group for Ile tRNA synthetase catalytic domains even though our protein is an Arg tRNA synthetase! Also worth noting the "mainly alpha" and "alpha and beta" discrepancy at the highest level.
+- tRNA binding domain: [CATH](http://www.cathdb.info/version/v4_2_0/superfamily/3.40.50.620/classification) and [SCOP](http://scop.mrc-lmb.cam.ac.uk/scop/data/scop.b.b.ea.b.b.html) - completely different classification levels, especially noteworthy the top level "alpha beta" vs "all alpha" discrepancy.
 
 d) [tRNA-synt_1d](http://pfam.xfam.org/family/tRNA-synt_1d).
 - [PF00750_uniprot.txt](files/PF00750_uniprot.txt).
