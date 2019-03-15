@@ -72,7 +72,7 @@ b) Click through to the InterPro database entry (`CTRL-F` for "View protein in I
 - Does it match what you see in the structure?
 - What InterPro family is it part of? Here you can read a bit about this protein, if you're interested. How many members does the family have? Is our protein similar to the most common domain architecture in this family or is it part of a smaller subgroup?
 
-c) From the "Structures" tab in InterPro, follow the links to SCOP and CATH database entries. Do these databases agree on the classification of the constituent domains?
+c) While you are on the page corresponding to the InterPro family, from the "Structures" tab, follow the links to SCOP and CATH database entries. Do these databases agree on the hierarchical classification of the constituent domains of this family?
 
 Go back to the UniProt entry for our protein.
 
