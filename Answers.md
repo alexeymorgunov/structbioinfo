@@ -29,17 +29,17 @@ No questions here.
 ---
 **3. Interesting databases.**
 
-a) [Results](http://consurf.tau.ac.il/results/1551476465/output.php). (Link will expire by end of March.) Full [results archive](files/consurf_results.zip). Core of the protein is more conserved, surfaces involved in interacting with the tRNA are also very conserved but outer regions are more variable - exactly what we'd expect. Functional parts and the core of a protein are typically more conserved than outer regions or functionally less important parts. Therefore, evolutionary conservation can help localise the active site or interacting surfaces.
+a) [Results](https://consurf.tau.ac.il/results/1583447546/output.php). (Link will expire by end of March.) Full [results archive](files/consurf_results.zip). Core of the protein is more conserved, surfaces involved in interacting with the tRNA are also very conserved but outer regions are more variable - exactly what we'd expect. Functional parts and the core of a protein are typically more conserved than outer regions or functionally less important parts. Therefore, evolutionary conservation can help localise the active site or interacting surfaces.
 
 b) [InterPro](https://www.ebi.ac.uk/interpro/protein/Q05506).
 - 3 domains - ArgRS NTD, catalytic core and DALR anticodon binding. Some motifs including HIGH and KMSK. Multiple databases agree on the predictions, good support.
 - Yes, we should see three domains in the structure quite well.
-- It is part of [IPR001278](http://www.ebi.ac.uk/interpro/entry/IPR001278) with over 37,000 proteins. (It was just 28,000 in 2018!) Our domain architecture is the most common.
+- It is part of [IPR001278](http://www.ebi.ac.uk/interpro/entry/IPR001278) with over 46,000 proteins. (It was just 28,000 in 2018 and 37,000 in 2019!) Our domain architecture is the most common.
 
 c) The two databases disagree. SCOP entries are manually annotated and thus are more detailed/less error-prone. CATH is mostly automated so covers more proteins but is less precise, as you can see from the comparison.
-- N-terminal domain: [CATH](http://www.cathdb.info/version/v4_2_0/superfamily/3.30.1360.70/classification) and [SCOP](http://scop.mrc-lmb.cam.ac.uk/scop/data/scop.b.e.bfi.c.b.html) - note the different hierarchical levels.
-- Catalytic domain: [CATH](http://www.cathdb.info/version/v4_2_0/superfamily/1.10.730.10/classification) and [SCOP](http://scop.mrc-lmb.cam.ac.uk/scop/data/scop.b.d.da.b.b.html) - here, SCOP correctly classifies the Class I tRNA synthetase catalytic domains, but CATH shows a group for Ile tRNA synthetase catalytic domains even though our protein is an Arg tRNA synthetase! Also worth noting the "mainly alpha" and "alpha and beta" discrepancy at the highest level.
-- tRNA binding domain: [CATH](http://www.cathdb.info/version/v4_2_0/superfamily/3.40.50.620/classification) and [SCOP](http://scop.mrc-lmb.cam.ac.uk/scop/data/scop.b.b.ea.b.b.html) - completely different classification levels, especially noteworthy is the top level "alpha beta" vs "all alpha" discrepancy.
+- N-terminal domain: [CATH](http://www.cathdb.info/version/latest/superfamily/3.30.1360.70/classification) and [SCOP](http://scop.berkeley.edu/sunid=55191) - note the different hierarchical levels.
+- Catalytic domain: [CATH](http://www.cathdb.info/version/latest/superfamily/1.10.730.10/classification) and [SCOP](http://scop.berkeley.edu/sunid=52375) - here, SCOP correctly classifies the Class I tRNA synthetase catalytic domains, but CATH shows a group for Ile tRNA synthetase catalytic domains even though our protein is an Arg tRNA synthetase! Also worth noting the "mainly alpha" and "alpha and beta" discrepancy at the highest level.
+- tRNA binding domain: [CATH](http://www.cathdb.info/version/latest/superfamily/3.40.50.620/classification) and [SCOP](http://scop.berkeley.edu/sunid=47324) - completely different classification levels, especially noteworthy is the top level "alpha beta" vs "all alpha" discrepancy.
 
 d) [tRNA-synt_1d](http://pfam.xfam.org/family/tRNA-synt_1d).
 - [PF00750_uniprot.txt](files/PF00750_uniprot.txt).
@@ -47,9 +47,9 @@ d) [tRNA-synt_1d](http://pfam.xfam.org/family/tRNA-synt_1d).
 ---
 **4. What if we don't have a structure?**
 
-a) [Alignment](https://www.uniprot.org/align/A201903106746803381A1F0E0DB47453E0216320D3911E0O). (Link will expire on 17 Mar 2019.) Very similar sequences, 64.4% identity means this is definitely the same protein. Notice a small insertion in the _C. albicans_ version. Downloaded [alignment](files/alignment.fasta).
+a) [Alignment](https://www.uniprot.org/align/A20200305E5A08BB0B2D1C45B0C7BC3B55FD265560832E7F). (Link will expire on 13 Mar 2020.) Very similar sequences, 64.4% identity means this is definitely the same protein. Notice a small insertion in the _C. albicans_ version. Downloaded [alignment](files/alignment.fasta).
 
-b) [Results](https://swissmodel.expasy.org/interactive/TZS3Bm/). (Link may expire.) Full [results archive](files/homology_modelling_results.zip) and the [PDB model](model.pdb) only.
+b) [Results](https://swissmodel.expasy.org/interactive/Ydm6wt/). (Link may expire eventually.) Full [results archive](files/homology_modelling_results.zip) and the [PDB model](model.pdb) only.
 
 c) The disordered part corresponds to the insertion. Our homology model shows this region to be on the surface of the protein, a loop insertion. This makes perfect sense structurally. Clearly, we shouldn't trust the model in this region - we don't know how this loop folds in reality or whether it even has a stable conformation.
 
@@ -68,7 +68,7 @@ color pink, human
 cealign human, cerev
 center
 ```
-The RMSD should be around 3.88. Unsurprisingly, this is worse than the previous alignment but still a very good score. Visual assessment should confirm that the proteins are very similar to each other. Baker's yeast and humans are quite far apart on the evolutionary tree, with sequence identity for this essential protein of only 24% ([alignment](https://www.uniprot.org/align/A201903106746803381A1F0E0DB47453E0216320D3911EFZ) - link will expire on 17 Mar 2019) but with very strong structural homology. Structure is indeed much better conserved than sequence!
+The RMSD should be around 3.88. Unsurprisingly, this is worse than the previous alignment but still a very good score. Visual assessment should confirm that the proteins are very similar to each other. Baker's yeast and humans are quite far apart on the evolutionary tree, with sequence identity for this essential protein of only 24% ([alignment](https://www.uniprot.org/align/A202003055C475328CEF75220C360D524E9D456CE0168675) - link will expire on 13 Mar 2020) but with very strong structural homology. Structure is indeed much better conserved than sequence!
 
 ---
 **5. Coevolutionary analysis**

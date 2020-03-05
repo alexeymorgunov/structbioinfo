@@ -1,12 +1,12 @@
 # Structural bioinformatics practical
 
-**Part II BBS Bioinformatics** - 15:00-17:00, 11 Mar 2019
+**Part II BBS Bioinformatics** - 15:00-17:00, 9 Mar 2020
 
 Instructions for the practical are below. [Answers](Answers.md) are available for reference.
 
 Just in case, I've made available all the [files](files) that you are otherwise supposed to download throughout the practical from their original sources. This may be useful if some analyses take too long to run on the servers, the servers are down (happens more often than you'd think!) or if they fail to run for some unexplained reason. Check the relevant section in [Answers](Answers.md) for the exact links.
 
-[Lecture slides](StructBioInfo2019.pdf) from the lecture on 5 Mar 2019 are also available for reference.
+[Lecture slides](StructBioInfo2020.pdf) are also available for reference.
 
 ---
 **1. Finding the right structures - UniProt and PDB.**
@@ -72,7 +72,7 @@ b) Click through to the InterPro database entry (`CTRL-F` for "View protein in I
 - Does it match what you see in the structure?
 - What InterPro family is it part of? Here you can read a bit about this protein, if you're interested. How many members does the family have? Is our protein similar to the most common domain architecture in this family or is it part of a smaller subgroup?
 
-c) While you are on the page corresponding to the InterPro family, from the "Structures" tab, follow the links to SCOP and CATH database entries. Do these databases agree on the hierarchical classification of the constituent domains of this family?
+c) While you are on the page corresponding to the InterPro family, from the bottom of the "Overview" tab, follow the links to SCOP and CATH database entries. Do these databases agree on the hierarchical classification of the constituent domains of this family?
 
 Go back to the UniProt entry for our protein.
 
@@ -124,7 +124,7 @@ a) Let's see if some of the top predictions are actually close in space in our s
 ---
 Great job on getting to the end of this practical! I hope you enjoyed it and learned something. If you still have time remaining, feel free to repeat some of the analysis with your own favourite protein, or to explore more options available in these databases and servers.
 
-If you have any questions or comments, don't hesitate to email me: asm63[at]cam.ac.uk.
+If you have any questions or comments, don't hesitate to email me: alexey[at]manifoldresearch.com.
 
 
 ---
